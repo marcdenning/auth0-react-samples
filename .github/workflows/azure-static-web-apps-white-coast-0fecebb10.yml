@@ -19,7 +19,9 @@ jobs:
         with:
           submodules: true
       - name: Create config file
-        run: cat ${{ secrets.AUTH_CONFIG }} >> Sample-01/src/auth_config.json
+        run: echo $AUTH_CONFIG >> Sample-01/src/auth_config.json
+        env:
+          AUTH_CONFIG: ${{ secrets.AUTH_CONFIG }}
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
