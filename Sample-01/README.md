@@ -10,6 +10,10 @@ This sample demonstrates the following use cases:
 - [Protecting routes](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/views/Profile.js#L33)
 - [Calling APIs](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/views/ExternalApi.js)
 
+@marcdenning expanded the scope of the application to obtain and show an access key for the API configured on the [user profile view](./src/views/Profile.js).
+
+@marcdenning also added a [GitHub action](/.github/workflows/azure-static-web-apps-white-coast-0fecebb10.yml) to build and deploy the app to an [Azure Static Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/overview).
+
 ## Project setup
 
 Use `npm` to install the project dependencies:
